@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Pokedex Interactiva</title>
+</head>
+<body>
+  <main class="pokedex  " id="pokedex" tabindex="0">
+    <section class="pokedex-main" aria-label="informacion general del pokémon">
+      <div class="header-shadow">
+        <div class="header">
+          <span class="light is-big is-sky " id="lightVoice"></span>
+          <span class="light is-red"></span>
+          <span class="light is-yellow"></span>
+          <span class="light is-green"></span>
+        </div>
+      </div>
+
+      <div class="screen">
+        <div class="screen-borderShadow">
+          <div class="screen-border">
+            <div class="screen-buttonsHigher">
+              <span class="buttonScreenHigher"></span>
+              <span class="buttonScreenHigher"></span>
+            </div>
+            <div class="screen-safeArea" id="screen">
+              <img class="img-default"  src="images/klipartz.com.png" alt="Imagen Pokemon" id="image-pokemon">
+            </div>
+            <div class="screen-buttonsLower">
+                <span class="buttonScreenLower"></span>
+                <span> <img src="images/button.png" alt=""></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="actions">
+        <div class="variants">
+          <span class="variants-one"></span>
+          <span class="variants-two"></span>
+          <span class="variants-three" id="pokemonRandom" aria-label="Pokemon al azar" title="Pokemon al azar"></span>
+        </div>
+        <form role="search" id="form" class="search">
+          <input type="text" name="id" id="id-pokemon" placeholder="¿Quién es ese pokémon?"  autocomplete="off" >
+        </form>
+        <div class="description">
+          <p id="description" aria-label="Descripcion de Pokémons"></p>
+        </div>
+        <div class="navigation">
+          <button id="next-pokemon" class="navigation-right" aria-label="Siguiente Pokémon" title="Siguiente Pokémon"></button>
+          <button id="prev-pokemon" class="navigation-left" aria-label="Pokémon anterior" title="Pokémon anterior"></button>
+          <button id="prev-image" class="navigation-up" aria-label="Siguiente imagen pokémon" title="Siguiente imagen pokémon"></button>
+          <button id="next-image" class="navigation-down" aria-label="Imagen anterior pokémon" title="Imagen anterior pokémon"></button>
+        </div>
+      </div>
+    </section>
+
+    <div class="cover-front">
+      Cover Front
+    </div>
+
+    <section class="cover-back" aria-label="estadisticas del pokémon">
+      <div class="stats">
+        <canvas id="stats" width="200" height="200"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+  <script src="js/index.js" type="module"></script>
+</body>
+</html>
+
+
+

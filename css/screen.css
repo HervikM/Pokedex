@@ -1,0 +1,40 @@
+/* .screen {
+
+} */
+
+.screen-border{
+   margin-block-start: .8rem;
+   padding-inline-start: 1.5rem;
+   padding-inline-end: 1.5rem;
+   /* padding-block-end: 2.75rem; */
+   border-radius: .5rem;
+   background-color: #DEDEDE;
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 2rem 100%, 0 calc(100% - 2.75rem));
+   display: flex;
+   flex-direction: column;
+   border: .25rem solid black;
+}
+
+
+.screen-borderShadow{
+    filter: drop-shadow(0 .25rem 0 black);
+}
+
+.screen-safeArea{
+   background-color: #272727;
+   border-radius: .25rem;
+   padding: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   block-size: 10rem;
+   box-sizing: border-box;
+   background-size: cover;
+   background-position: center;
+}
+
+.img-default{
+   background-size: cover;
+   width: 100px;
+
+}

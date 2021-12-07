@@ -1,0 +1,75 @@
+.light{
+   inline-size: 1rem;
+   block-size: 1rem;
+   border-radius: 50%;
+   overflow: hidden;
+   background-color: black;
+   border: 1px solid black;
+
+}
+
+.light.is-big{
+   inline-size: 3.5rem;
+   block-size: 3.5rem;
+   border: 5px solid #DEDEDE;
+   box-sizing: border-box;
+}
+
+.light.is-sky{
+   background-color: #1F6C9E;
+}
+
+
+
+
+
+.light.is-red{
+   background-color: #a33f40;
+   /* background-color: #f4647d; */
+}
+.light.is-red::before{
+     content: " ";
+     position: absolute;
+     inline-size: .4rem;
+     block-size: .4rem;
+     background: #f4647d;
+     inset-block-start: -3.568px;
+     inset-inline-start: 76.2px;;
+     border-radius: 50%;
+
+}
+
+.light.is-yellow{
+   background-color: #fcfc04;
+   /* background-color: #feef8d; */
+}
+
+.light.is-yellow::before{
+     content: " ";
+     position: absolute;
+     inline-size: .4rem;
+     block-size: .4rem;
+     background: #feef8d;
+     inset-block-start: -3.568px;
+     inset-inline-start: 104.2px;
+     border-radius: 50%;
+}
+
+.light.is-green{
+   background-color: #52fa05;
+   /* background-color: #5baa67; */
+
+}
+.light.is-animated{
+   animation: light linear .3s infinite;
+}
+
+@keyframes light {
+   0%{
+      background-color: #4ba3da;
+   }50%{
+      background-color: #1F6C9E;
+   }100%{
+      background-color: #4ba3da;
+   }
+}

@@ -1,0 +1,7 @@
+.stats{
+   background-color: #232323;
+   padding: 1rem;
+   border-radius: .5rem;
+   margin-block-start: 1.6rem;
+   flex-grow: 1;
+}

@@ -1,0 +1,56 @@
+/* Buttons Highers */
+.screen-buttonsHigher{
+   /* border: 1px solid purple; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+   padding: 1rem;
+}
+.buttonScreenHigher{
+   inline-size: .7rem;
+   block-size: .7rem;
+   border-radius: 50%;
+   /* overflow: hidden; */
+   background-color: var(--primary);
+   border: 1px solid black;
+
+}
+
+/* Buttons Lowers */
+
+.screen-buttonsLower{
+   /* border: 1px solid green; */
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: .8rem;
+   padding-inline:0 ;
+   padding-block: 1rem;
+   box-sizing: border-box;
+
+}
+
+.screen-border .buttonScreenLower{
+   block-size: 2rem;
+   inline-size: 2rem;
+   /* margin: 0; */
+    /* padding:0; */
+   border-radius: 50%;
+   background-color: #af0924;
+   border: 2px solid var(--black);
+   cursor: pointer;
+}
+
+
+.screen-border .buttonScreenLower:nth-of-type(1){
+   margin-inline-start: 1rem;
+}
+.screen-border span:nth-of-type(2){
+   margin-inline-start: 1rem;
+}
+
+.screen-border .buttonScreenLower:is(:active, :focus, :focus-within){
+   transform: scale(.9);
+}

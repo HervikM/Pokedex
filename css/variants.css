@@ -1,0 +1,44 @@
+.variants{
+   display: flex;
+   grid-area: variants;
+   /* border: 1px solid black; */
+   gap: 1.5rem;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+
+.variants-one, .variants-two{
+   inline-size: 2.5rem;
+   block-size: 8px;
+   border-radius: .5rem;
+   border: 2px solid var(--black);
+   cursor: pointer;
+}
+
+
+.variants-one{
+   background-color: #a33f40;
+   /* margin-inline-start: 2rem; */
+}
+
+.variants-two{
+   background-color: #1F6C9E;
+}
+
+.variants-three{
+   /* display: none; */
+   inline-size: 4rem;
+   block-size: 4rem;
+   background-color: #272727;
+   border-radius: 50%;
+   position: absolute;
+   inset-inline-start: 5%;
+   inset-block-start: .5rem;
+   border: 3px solid var(--black);
+   cursor: pointer;
+}
+
+.variants-one:is(:active,:focus,:focus-within), .variants-two:is(:active,:focus,:focus-within), .variants-three:is(:active,:focus,:focus-within){
+   transform: scale(.9);
+}
